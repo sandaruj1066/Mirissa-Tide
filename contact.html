@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking | Mirissa Tides</title>
+<meta name="description" content="Get in touch to plan your Mirissa trip, ask about whale-watching tours, or send a booking inquiry.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Southern Province, Sri Lanka · 5.9458° N, 80.4597° E</span>
+    <span><a href="contact.html">Plan your visit</a></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="main-nav" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M2 20c3-3 6-3 9 0s6 3 9 0 6-3 8 0" stroke="#1c8c99" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M2 25c3-3 6-3 9 0s6 3 9 0 6-3 8 0" stroke="#0e3a45" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="22" cy="7" r="4" fill="#e1652e"/></svg>
+      Mirissa Tides
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Mirissa</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="accommodation.html">Accommodation</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact &amp; Booking</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero page-hero" style="background-image:url('assets/images/mirissa-beach.jpg');">
+    <div class="hero-inner">
+      <span class="eyebrow">Contact &amp; booking</span>
+      <h1>Let's plan your Mirissa trip</h1>
+      <p class="lede">Send an inquiry about accommodation, whale-watching tours or a full itinerary, and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="grid grid-2" style="align-items:start;">
+
+        <div>
+          <span class="eyebrow">Send an inquiry</span>
+          <h2>Booking &amp; general inquiry form</h2>
+
+          <div class="form-success" id="form-success" role="alert">
+            Thanks — your inquiry has been prepared. In a live deployment this would be sent to our booking team, who typically reply within one business day.
+          </div>
+
+          <form class="form-card" id="inquiry-form" novalidate>
+
+            <fieldset>
+              <legend>Your details</legend>
+
+              <div class="field">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="full-name" required autocomplete="name">
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number <span class="small">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+94 71 234 5678">
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                  <option value="">Select your country</option>
+                  <option>Sri Lanka</option>
+                  <option>India</option>
+                  <option>United Kingdom</option>
+                  <option>Germany</option>
+                  <option>Australia</option>
+                  <option>United States</option>
+                  <option>Other</option>
+                </select>
+                <p class="error-msg" role="alert"></p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Trip details</legend>
+
+              <div class="field">
+                <label for="travel-date">Planned travel date</label>
+                <input type="date" id="travel-date" name="travel-date" required>
+                <p class="hint">We'll use this to check whale-watching season and availability.</p>
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="guests">Number of travellers</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" value="2" required>
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <span style="display:block;font-weight:600;margin-bottom:.5em;">What are you interested in?</span>
+                <div class="radio-row">
+                  <label><input type="radio" name="interest" value="Accommodation" checked> Accommodation</label>
+                  <label><input type="radio" name="interest" value="Whale watching"> Whale watching</label>
+                  <label><input type="radio" name="interest" value="Full itinerary"> Full itinerary</label>
+                  <label><input type="radio" name="interest" value="General question"> General question</label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your trip — budget, group size, or anything else useful."></textarea>
+                <p class="error-msg" role="alert"></p>
+              </div>
+            </fieldset>
+
+            <button class="btn btn-primary" type="submit">Send inquiry</button>
+          </form>
+        </div>
+
+        <div>
+          <span class="eyebrow">Reach us directly</span>
+          <h2>Contact details</h2>
+          <ul style="list-style:none;padding:0;">
+            <li style="margin-bottom:1.1em;"><strong>Email:</strong> <a href="mailto:hello@mirissatides.example">hello@mirissatides.example</a></li>
+            <li style="margin-bottom:1.1em;"><strong>Phone / WhatsApp:</strong> <a href="tel:+94412345678">+94 41 234 5678</a></li>
+            <li style="margin-bottom:1.1em;"><strong>Office:</strong> Beach Road, Mirissa, Matara District, Southern Province, Sri Lanka</li>
+          </ul>
+
+          <div class="table-scroll">
+            <table>
+              <caption>Office hours</caption>
+              <tbody>
+                <tr><th scope="row">Monday – Friday</th><td>8:00 am – 6:00 pm</td></tr>
+                <tr><th scope="row">Saturday</th><td>9:00 am – 4:00 pm</td></tr>
+                <tr><th scope="row">Sunday</th><td>Closed (WhatsApp messages still answered)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 style="margin-top:2em;">Find us</h3>
+          <iframe class="map-frame" title="Map showing Mirissa, Sri Lanka" src="https://maps.google.com/maps?q=5.9458,80.4597&z=14&output=embed" loading="lazy"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="grid grid-4">
+      <div>
+        <h4>Mirissa Tides</h4>
+        <p class="small">An independent guide to visiting Mirissa, a beach and fishing town on Sri Lanka's southern coast.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Mirissa</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visitor info</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; booking</a></li>
+          <li><a href="about.html#getting-there">Getting there</a></li>
+          <li><a href="activities.html#whale-season">Whale season dates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay updated</h4>
+        <form id="newsletter-form">
+          <div class="field">
+            <label for="newsletter-email">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="you@example.com">
+          </div>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+          <p class="small" id="newsletter-note" role="status" style="margin-top:.6em;"></p>
+        </form>
+      </div>
+    </div>
+
+    <details class="credits">
+      <summary>Content credits</summary>
+      <ul>
+        <li>Map data &copy; Google Maps.</li>
+        <li>Contact details on this page are placeholders for coursework purposes.</li>
+      </ul>
+    </details>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Mirissa Tides — a student coursework project. Not an official tourism authority.</span>
+      <span>Built for the Tourism Website Development assignment.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
